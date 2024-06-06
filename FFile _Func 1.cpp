@@ -22,7 +22,7 @@ void createFile(string filename)
 void writeFile(string filename)
 {
     fstream myFile;
-    myFile.open(filename+".txt",ios::out);
+    myFile.open(filename+".txt",ios::out | ios::app);
     if(myFile.is_open())
     {
       myFile << "Hello world" << endl;
